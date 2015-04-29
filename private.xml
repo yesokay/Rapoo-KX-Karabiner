@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<root>
+
+	<devicevendordef>
+		<vendorname>RAPOO</vendorname>
+		<vendorid>0x24ae</vendorid>
+	</devicevendordef>
+
+	<deviceproductdef>
+		<productname>RAPOO_KX</productname>
+		<productid>0x2003</productid>
+	</deviceproductdef>
+
+	<item>
+		<name>Rapoo KX</name>
+
+		<item>
+			<name>Holding Up Arrow = Shift</name>
+			<appendix>Can't get used to the narrow Right Shift button?</appendix>
+			<appendix>(+ When you push Up Arrow only, send Up Arrow)</appendix>
+			<identifier>rapoo.kx.hold_up_to_shift</identifier>
+			<device_only>DeviceVendor::RAPOO, DeviceProduct::RAPOO_KX</device_only>
+			<autogen>__KeyOverlaidModifier__ KeyCode::CURSOR_UP, KeyCode::SHIFT_R, KeyCode::CURSOR_UP</autogen>
+			<autogen>__HoldingKeyToKey__ KeyCode::CURSOR_UP, KeyCode::CURSOR_UP</autogen>
+		</item>
+
+		<item>
+			<name>Application Button to Shift</name>
+			<appendix>Let's make that right shift even wider</appendix>
+			<appendix>(+ When you push Application Button only, send Application Button)</appendix>
+			<identifier>rapoo.kx.appl_btn_to_fn</identifier>
+			<device_only>DeviceVendor::RAPOO, DeviceProduct::RAPOO_KX</device_only>
+			<autogen>__KeyOverlaidModifier__ KeyCode::PC_APPLICATION, KeyCode::SHIFT_R, KeyCode::PC_APPLICATION</autogen>
+		</item>
+
+		<item>
+			<name>F1 - F2 to brightness control</name>
+			<identifier>rapoo.kx.f1_2_to_brightness</identifier>
+			<device_only>DeviceVendor::RAPOO, DeviceProduct::RAPOO_KX</device_only>
+			<autogen>__KeyToKey__ KeyCode::F11, KeyCode::BRIGHTNESS_DOWN</autogen>
+			<autogen>__KeyToKey__ KeyCode::F2, KeyCode::BRIGHTNESS_UP</autogen>
+		</item>
+
+		<item>
+			<name>F3 to Expose</name>
+			<identifier>rapoo.kx.f3_to_expose</identifier>
+			<autogen>__KeyToKey__ KeyCode::F3, KeyCode::EXPOSE_ALL</autogen>
+		</item>
+
+		<item>
+			<name>F4 - F6 buttons to media controls</name>
+			<identifier>rapoo.kx.f46_to_media</identifier>
+			<device_only>DeviceVendor::RAPOO, DeviceProduct::RAPOO_KX</device_only>
+			<autogen>__KeyToKey__ KeyCode::F4, ConsumerKeyCode::MUSIC_PLAY</autogen>
+			<autogen>__KeyToKey__ KeyCode::F5, ConsumerKeyCode::MUSIC_PREV</autogen>
+			<autogen>__KeyToKey__ KeyCode::F6, ConsumerKeyCode::MUSIC_NEXT</autogen>
+		</item>
+
+		<item>
+			<name>F7 - F9 buttons to volume controls</name>
+			<identifier>rapoo.kx.f79_to_volume</identifier>
+			<device_only>DeviceVendor::RAPOO, DeviceProduct::RAPOO_KX</device_only>
+			<autogen>__KeyToKey__ KeyCode::F7, ConsumerKeyCode::VOLUME_UP</autogen>
+			<autogen>__KeyToKey__ KeyCode::F8, ConsumerKeyCode::VOLUME_DOWN</autogen>
+			<autogen>__KeyToKey__ KeyCode::F9, ConsumerKeyCode::VOLUME_MUTE</autogen>
+		</item>
+
+		<item>
+			<name>Change left side modifiers to Mac layout</name>
+			<appendix>- Switch Alt and Win (⌘)</appendix>
+			<appendix>Fn on the KX is not sent to the host, therefore Ctrl and Fn are not changed.</appendix>
+			<identifier>rapoo.kx.left_mod_to_mac</identifier>
+			<device_only>DeviceVendor::RAPOO, DeviceProduct::RAPOO_KX</device_only>
+			<autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
+			<autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+		</item>
+
+		<item>
+			<name>Change right side modifiers to Mac layout</name>
+			<appendix>- Switch Alt and Win (⌘)</appendix>
+			<appendix>Fn on the KX is not sent to the host, therefore Ctrl and Fn are not changed.</appendix>
+			<identifier>rapoo.kx.right_mod_to_mac</identifier>
+			<device_only>DeviceVendor::RAPOO, DeviceProduct::RAPOO_KX</device_only>
+			<autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::COMMAND_R</autogen>
+			<autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::OPTION_R</autogen>
+		</item>
+
+		<item>
+			<name>Use Right Ctrl as Fn key</name>
+			<identifier>rapoo.kx.right_ctrl_to_fn</identifier>
+			<device_only>DeviceVendor::RAPOO, DeviceProduct::RAPOO_KX</device_only>
+			<autogen>__KeyToKey__ KeyCode::CONTROL_R, KeyCode::FN</autogen>
+		</item>
+
+
+	</item>
+</root>
